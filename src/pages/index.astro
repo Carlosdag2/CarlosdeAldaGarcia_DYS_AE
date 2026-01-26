@@ -1,0 +1,343 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HomeStats from '../components/home/HomeStats.jsx';
+---
+
+<Layout title="Inicio" currentPage="/" showFooter={true}>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="hero-title mb-3">
+                        Sistema de Indicadores<br>de Sostenibilidad
+                    </h1>
+                    <p class="hero-subtitle mb-4">
+                        Plataforma de gestión de indicadores ambientales, sociales y económicos 
+                        desarrollada por EcoData Solutions S.L.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="/indicadores" class="btn btn-light px-4">
+                            Ver Indicadores
+                        </a>
+                        <a href="/crear-indicador" class="btn btn-outline-light px-4">
+                            Crear Nuevo
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-4 mt-lg-0">
+                    <div class="d-flex gap-4 justify-content-center justify-content-lg-end">
+                        <div class="text-center">
+                            <div class="h2 mb-0 fw-bold">100+</div>
+                            <small class="opacity-75">Indicadores</small>
+                        </div>
+                        <div class="text-center">
+                            <div class="h2 mb-0 fw-bold">5</div>
+                            <small class="opacity-75">Categorías</small>
+                        </div>
+                        <div class="text-center">
+                            <div class="h2 mb-0 fw-bold">3</div>
+                            <small class="opacity-75">Ámbitos</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accesos Rápidos -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Acceso Rápido</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <a href="/indicadores" class="nav-card card nav-card-green h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-list-check display-5 mb-3"></i>
+                            <h6 class="mb-1">Ver Indicadores</h6>
+                            <small class="opacity-75">Consultar y filtrar</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="/crear-indicador" class="nav-card card nav-card-blue h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-plus-circle display-5 mb-3"></i>
+                            <h6 class="mb-1">Crear Indicador</h6>
+                            <small class="opacity-75">Añadir nuevo</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="/estadisticas" class="nav-card card nav-card-purple h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-bar-chart display-5 mb-3"></i>
+                            <h6 class="mb-1">Estadísticas</h6>
+                            <small class="opacity-75">Ver métricas</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre la Empresa -->
+    <section id="empresa" class="py-5 info-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="mb-3 fw-bold">EcoData Solutions S.L.</h2>
+                    <p class="text-muted">
+                        Empresa comprometida con la transformación digital sostenible y el 
+                        desarrollo de soluciones tecnológicas responsables con el medio ambiente.
+                    </p>
+                    <p class="text-muted mb-4">
+                        Este sistema forma parte del proyecto "DWES + Digitalización + Sostenibilidad", 
+                        un servicio REST que centraliza la gestión de indicadores ambientales, sociales y económicos.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="feature-card p-3">
+                                <i class="bi bi-check-circle text-success me-2"></i>
+                                <span class="small fw-medium">API REST</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="feature-card p-3">
+                                <i class="bi bi-shield-check text-primary me-2"></i>
+                                <span class="small fw-medium">Seguro</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="feature-card p-3">
+                                <i class="bi bi-graph-up text-warning me-2"></i>
+                                <span class="small fw-medium">Análisis</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="feature-card p-3">
+                                <i class="bi bi-globe text-info me-2"></i>
+                                <span class="small fw-medium">Global</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <img src="https://olut.barcelona/wp-content/uploads/2025/01/oficinas-vic-estudio-dyzaynct-sistema-olut-6615-0336615-068.jpg" 
+                             alt="Oficina EcoData Solutions" class="card-img-top">
+                        <div class="card-body">
+                            <h6 class="text-success mb-2">Nuestra Misión</h6>
+                            <p class="text-muted small mb-0">
+                                Proporcionar herramientas digitales que permitan medir y mejorar 
+                                el impacto en la sostenibilidad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qué es la Sostenibilidad -->
+    <section id="sostenibilidad" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title">Los Tres Pilares</h2>
+                    <p class="text-muted mb-4">
+                        La sostenibilidad se basa en satisfacer las necesidades del presente 
+                        sin comprometer a las generaciones futuras.
+                    </p>
+                    
+                    <div class="pillar-card">
+                        <h6 class="mb-1"><i class="bi bi-tree text-success me-2"></i>Ambiental</h6>
+                        <p class="mb-0 text-muted small">Protección del medio ambiente y gestión de recursos.</p>
+                    </div>
+                    
+                    <div class="pillar-card" style="border-color: #0284c7;">
+                        <h6 class="mb-1"><i class="bi bi-people text-primary me-2"></i>Social</h6>
+                        <p class="mb-0 text-muted small">Bienestar, igualdad y desarrollo comunitario.</p>
+                    </div>
+                    
+                    <div class="pillar-card" style="border-color: #f59e0b;">
+                        <h6 class="mb-1"><i class="bi bi-currency-euro text-warning me-2"></i>Económico</h6>
+                        <p class="mb-0 text-muted small">Crecimiento responsable y eficiencia.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <HomeStats client:load />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digitalización -->
+    <section class="py-5 info-section">
+        <div class="container">
+            <h2 class="section-title text-center">Digitalización</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card h-100 text-center p-4">
+                        <div class="feature-icon icon-green mx-auto">
+                            <i class="bi bi-speedometer2"></i>
+                        </div>
+                        <h6 class="mb-1">Monitorización</h6>
+                        <p class="text-muted small mb-0">Seguimiento en tiempo real</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card h-100 text-center p-4">
+                        <div class="feature-icon icon-blue mx-auto">
+                            <i class="bi bi-clipboard-data"></i>
+                        </div>
+                        <h6 class="mb-1">Análisis</h6>
+                        <p class="text-muted small mb-0">Identificar tendencias</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card h-100 text-center p-4">
+                        <div class="feature-icon icon-orange mx-auto">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </div>
+                        <h6 class="mb-1">Automatización</h6>
+                        <p class="text-muted small mb-0">Optimización de procesos</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card h-100 text-center p-4">
+                        <div class="feature-icon icon-purple mx-auto">
+                            <i class="bi bi-lightbulb"></i>
+                        </div>
+                        <h6 class="mb-1">Innovación</h6>
+                        <p class="text-muted small mb-0">Soluciones tecnológicas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ODS Section -->
+    <section class="ods-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <h2 class="mb-3 fw-bold">Objetivos de Desarrollo Sostenible</h2>
+                    <p class="opacity-90 mb-4">
+                        Los 17 ODS de la ONU son un llamamiento universal para proteger el planeta 
+                        y mejorar las vidas de todas las personas.
+                    </p>
+                    <a href="https://www.un.org/sustainabledevelopment/es/" target="_blank" class="btn btn-light">
+                        <i class="bi bi-box-arrow-up-right me-2"></i>Más información
+                    </a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-3">
+                        <div class="col-4 col-md-2">
+                            <div class="ods-card" style="background-color: #e5243b;">
+                                <span class="ods-number">1</span>
+                                <span class="ods-label">Pobreza</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="ods-card" style="background-color: #dda63a;">
+                                <span class="ods-number">2</span>
+                                <span class="ods-label">Hambre</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="ods-card" style="background-color: #4c9f38;">
+                                <span class="ods-number">3</span>
+                                <span class="ods-label">Salud</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="ods-card" style="background-color: #c5192d;">
+                                <span class="ods-number">4</span>
+                                <span class="ods-label">Educación</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="ods-card" style="background-color: #ff3a21;">
+                                <span class="ods-number">5</span>
+                                <span class="ods-label">Igualdad</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="ods-card" style="background-color: #26bde2;">
+                                <span class="ods-number">6</span>
+                                <span class="ods-label">Agua</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="ods-card" style="background-color: #fcc30b;">
+                                <span class="ods-number">7</span>
+                                <span class="ods-label">Energía</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="ods-card" style="background-color: #a21942;">
+                                <span class="ods-number">8</span>
+                                <span class="ods-label">Trabajo</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="ods-card" style="background-color: #fd6925;">
+                                <span class="ods-number">9</span>
+                                <span class="ods-label">Industria</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="ods-card" style="background-color: #dd1367;">
+                                <span class="ods-number">10</span>
+                                <span class="ods-label">Desigualdad</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="ods-card" style="background-color: #fd9d24;">
+                                <span class="ods-number">11</span>
+                                <span class="ods-label">Ciudades</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="ods-card" style="background-color: #bf8b2e;">
+                                <span class="ods-number">12</span>
+                                <span class="ods-label">Consumo</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="ods-card" style="background-color: #3f7e44;">
+                                <span class="ods-number">13</span>
+                                <span class="ods-label">Clima</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="ods-card" style="background-color: #0a97d9;">
+                                <span class="ods-number">14</span>
+                                <span class="ods-label">Océanos</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="ods-card" style="background-color: #56c02b;">
+                                <span class="ods-number">15</span>
+                                <span class="ods-label">Ecosistemas</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="ods-card" style="background-color: #00689d;">
+                                <span class="ods-number">16</span>
+                                <span class="ods-label">Paz</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="ods-card" style="background-color: #19486a;">
+                                <span class="ods-number">17</span>
+                                <span class="ods-label">Alianzas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

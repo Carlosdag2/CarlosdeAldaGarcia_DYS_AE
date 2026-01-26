@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import IndicadorForm from '../components/forms/IndicadorForm.jsx';
+---
+
+<Layout title="Crear Indicador" currentPage="/crear-indicador">
+    <PageHeader 
+        title="Crear Indicador"
+        subtitle="Añade un nuevo indicador al sistema"
+        variant="blue"
+        icon="bi-plus-circle"
+    />
+    
+    <div class="container pb-5">
+        <div class="row">
+            <!-- Formulario -->
+            <div class="col-lg-8">
+                <div class="card form-card">
+                    <div class="card-header green">
+                        <h6 class="mb-0">Datos del Indicador</h6>
+                    </div>
+                    <div class="card-body p-4">
+                        <IndicadorForm client:load />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ayuda -->
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <div class="card help-card">
+                    <div class="card-body">
+                        <h6 class="card-title mb-3">Guía de Campos</h6>
+                        
+                        <div class="help-item">
+                            <i class="bi bi-tag"></i>
+                            <div>
+                                <strong>Tipo</strong>
+                                <small class="d-block text-muted">Ambiental, Social, Económico...</small>
+                            </div>
+                        </div>
+                        <div class="help-item">
+                            <i class="bi bi-folder"></i>
+                            <div>
+                                <strong>Categoría</strong>
+                                <small class="d-block text-muted">Energía, Agua, Residuos...</small>
+                            </div>
+                        </div>
+                        <div class="help-item">
+                            <i class="bi bi-rulers"></i>
+                            <div>
+                                <strong>Unidad</strong>
+                                <small class="d-block text-muted">kWh, m³, %, toneladas...</small>
+                            </div>
+                        </div>
+                        <div class="help-item">
+                            <i class="bi bi-globe2"></i>
+                            <div>
+                                <strong>Ámbito</strong>
+                                <small class="d-block text-muted">Local, Regional, Nacional...</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>

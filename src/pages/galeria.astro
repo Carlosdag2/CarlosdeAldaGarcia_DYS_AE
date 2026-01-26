@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import GalleryGrid from '../components/gallery/GalleryGrid.jsx';
+---
+
+<Layout title="Galería" currentPage="/galeria">
+    <PageHeader 
+        title="Galería"
+        subtitle="Imágenes sobre digitalización y sostenibilidad"
+        variant="green"
+        icon="bi-images"
+    />
+    
+    <div class="container pb-5">
+        <GalleryGrid client:load />
+    </div>
+</Layout>

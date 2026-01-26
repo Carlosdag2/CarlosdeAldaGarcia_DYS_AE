@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import IndicadoresList from '../components/indicadores/IndicadoresList.jsx';
+---
+
+<Layout title="Indicadores" currentPage="/indicadores">
+    <PageHeader 
+        title="Listado de Indicadores"
+        subtitle="Consulta y filtra los indicadores del sistema"
+        variant="green"
+        icon="bi-list-check"
+        showButton={true}
+        buttonText="Nuevo Indicador"
+        buttonHref="/crear-indicador"
+    />
+    
+    <div class="container pb-5">
+        <IndicadoresList client:load />
+    </div>
+</Layout>
